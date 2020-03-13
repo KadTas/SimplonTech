@@ -1,17 +1,25 @@
+body {
+    margin: 0;
+}
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 72px;
     background-color: #C8E1EA;
     font-size: 36px ;
+    font-family: Roboto;
 }
 nav img {
     width: auto;
 }
 ul {
     list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 a:hover {
     color: red;
