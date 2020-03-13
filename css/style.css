@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-size: 24px;
 }
 nav {
     display: flex;
@@ -49,4 +50,16 @@ a:hover {
 img {
 padding-left: 20px;
 padding-right: 20px;
+}
+.bestseller {
+    height: 445px;
+    background-color: #c4c4c4;
+}
+.footer1 {
+    background-color: #BBBBBB;
+    height: 300px;
+}
+.footer2 {
+    background-color: #C8E1EA;
+    height: 100px;
 }
