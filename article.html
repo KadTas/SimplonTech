@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simplon Tech</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-
+    
 </head>
 
 <body>
@@ -15,29 +15,21 @@
         <a href="galerie.html">Galerie</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <div class="sliding">
-        <img class="mySlides" src="./pictures/slide11.jpg">
-            <img class="mySlides" src="./pictures/slide22.jpg">
-    </div>
-    <div class="index1">
+    <div class="ordi">
+        <div class="carrousel">
+            </div>
+            <div class="descart">
+        <div>Nom du produit</div><br>
+        <div>Description du produit</div><br>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. </div><br>
+        <div>Caractéristiques du produit :</div><br>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</div>
-        <img src="./pictures/content1.jpg">
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur.</div>
     </div>
-    <div class="index2">
-        <img src="./pictures/content2.jpg">
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</div>
-    </div>
-    <div class="bestseller">
-        <div>Meilleures ventes</div>
-        <div class="bestselling">
-            <div><a href="./article.html"><img src="./pictures/computerresized.jpg"></a></div>
-            <div><a href="./article.html"><img src="./pictures/computerresized.jpg"></a></div>
-            <div><a href="./article.html"><img src="./pictures/computerresized.jpg"></a></div>
-        </div>
+</div>
     </div>
     <footer>
         <div class="footer1">
@@ -61,19 +53,4 @@
         </div>
     </footer>
 </body>
-<script>var slideIndex = 0;
-    carousel();
-    
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > x.length) {slideIndex = 1}
-      x[slideIndex-1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-</script>
 </html>
