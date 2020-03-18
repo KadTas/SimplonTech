@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simplon Tech</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <!-- jQuery 1.8 or later, 33 KB -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+<!-- Fotorama from CDNJS, 19 KB -->
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 
 <body>
@@ -15,9 +20,9 @@
         <a href="galerie.html">Galerie</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <div class="sliding">
-        <img class="mySlides" src="./pictures/slide11.jpg">
-            <img class="mySlides" src="./pictures/slide22.jpg">
+    <div class="fotorama" data-nav="false" data-stopautoplayontouch="false" data-autoplay="true" data-arrows="false">
+        <img src="./pictures/slide11.jpg">
+        <img src="./pictures/slide22.jpg">
     </div>
     <div class="index1">
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -43,14 +48,17 @@
         <div class="footer1">
             <div class="foot">
                 <div>Livraison gratuite</div>
+                <br>
                 <div>à partir de XX€</div>
             </div>
             <div class="foot">
                 <div>10% de réduction</div>
+                <br>
                 <div>pour les entreprises</div>
             </div>
             <div class="foot">
                 <div>Ouvert du Lundi au Vendredi</div>
+                <br>
                 <div>de 8H à 18H</div>
             </div>
         </div>
@@ -72,8 +80,8 @@
       }
       slideIndex++;
       if (slideIndex > x.length) {slideIndex = 1}
-      x[slideIndex-1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
+      x[slideIndex-1].style.display = "flex";
+      setTimeout(carousel, 3000); // Change image every 2 seconds
     }
 </script>
 </html>
